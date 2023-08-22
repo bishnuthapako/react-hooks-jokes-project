@@ -36,11 +36,12 @@ function JokeList({ numJokesToGet = 5 }) {
       }
     }
       // Load jokes from local storage if available
-      const storedJokes = localStorage.getItem("jokes");
-      if (storedJokes) {
-        setJokes(JSON.parse(storedJokes));
-        setIsLoading(false);
-      } else if (jokes.length === 0) {
+      // const storedJokes = localStorage.getItem("jokes");
+      // if (storedJokes) {
+      //   setJokes(JSON.parse(storedJokes));
+      //   setIsLoading(false);
+      // } else 
+      if (jokes.length === 0) {
         getJokes();
       }
 
@@ -67,7 +68,7 @@ function JokeList({ numJokesToGet = 5 }) {
               }
               return j;
        });
-       localStorage.setItem("jokes", JSON.stringify(updateJokes))
+      //  localStorage.setItem("jokes", JSON.stringify(updateJokes))
        return updateJokes;
     }
       
