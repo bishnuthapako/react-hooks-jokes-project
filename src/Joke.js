@@ -3,25 +3,29 @@ import "./Joke.css";
 
 /** Presentational joke component with voting buttons */
 
-function Joke({ vote, votes, text, id }) {
-  function upVote(evt) { vote(id, +1); }
-  function downVote(evt) { vote(id, -1); }
+function Joke({ joke, vote, votes }) {
+
+
 
   return (
-    <div className="Joke">
+    <div className="row">
+        <div className="col-lg-12 col-xs-12 p-3 fw-bold text-info">
+        <div className="Joke">
       <div className="Joke-votearea">
-        <button onClick={upVote}>
+        <button onClick={(e)=>vote(joke.id, +1)}>
           <i className="fas fa-thumbs-up" />
         </button>
 
-        <button onClick={downVote}>
+        <button onClick={(e)=> vote(joke.id, -1)}>
           <i className="fas fa-thumbs-down" />
         </button>
 
         {votes}
       </div>
 
-      <div className="Joke-text">{text}</div>
+      <div className="Joke-text">{joke.joke}</div>
+    </div>
+        </div>
     </div>
   );
 }
