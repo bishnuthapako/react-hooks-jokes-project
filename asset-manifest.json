@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-hooks-jokes-project/static/css/main.b8e7d893.css",
+    "main.js": "/react-hooks-jokes-project/static/js/main.e4f73823.js",
+    "index.html": "/react-hooks-jokes-project/index.html",
+    "main.b8e7d893.css.map": "/react-hooks-jokes-project/static/css/main.b8e7d893.css.map",
+    "main.e4f73823.js.map": "/react-hooks-jokes-project/static/js/main.e4f73823.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8e7d893.css",
+    "static/js/main.e4f73823.js"
+  ]
+}
