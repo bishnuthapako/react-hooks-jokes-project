@@ -9,7 +9,7 @@ function Joke({ joke, vote, votes }) {
 
   return (
     <div className="row">
-        <div className="col-lg-12 col-xs-12 p-3 fw-bold text-info">
+        <div className="grid col-lg-12 col-xs-12 p-3 fw-bold text-white">
         <div className="Joke">
       <div className="Joke-votearea">
         <button onClick={(e)=>vote(joke.id, +1)}>

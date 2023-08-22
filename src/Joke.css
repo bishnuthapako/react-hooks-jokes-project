@@ -1,5 +1,6 @@
 .Joke {
   margin-bottom: 0.75em;
+
 }
 
 .Joke-votearea {
@@ -16,3 +17,10 @@
   display: inline-block;
   width: 100%;
 }
+.row{
+  display: flex;
+  justify-content: center;
+
+
+}
+

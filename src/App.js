@@ -1,5 +1,6 @@
 import React from "react";
 import JokeList from "./JokeList";
+import "./App.css"
 
 /** Top-level component. */
 
